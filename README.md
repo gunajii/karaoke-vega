@@ -3,7 +3,7 @@
 Word-timed ("karaoke") subtitles for **React Native on Vega OS (Fire TV)**, and for any React Native or JavaScript
 target. Each word lights up as it is spoken.
 
-Extracted from WordLight, a read-along app for Fire TV built for the Amazon "Build, Ship, Shape" hackathon (2026). MIT licence.
+Extracted from WordLight, a read-along app for Fire TV built for the Amazon "Build, Ship, Shape" hackathon (2026). MIT licence. Repository: https://github.com/gunajii/karaoke-vega
 
 ## Problem
 A subtitle line that changes once per sentence is fine for following a story. A child learning to read needs to
@@ -92,6 +92,8 @@ The tests cover:
 
 ## Limitations
 - One line at a time: `<KaraokeLine>` renders a line and does not lay out paragraphs.
+- Highlight with text colour. On the Vega Virtual Device a `backgroundColor` on a nested `<Text>` is not drawn, so a
+  "dark text on a yellow box" style shows dark text on nothing. The default current-word style is yellow text.
 - Right-to-left scripts have not been tested.
 - The WebVTT parser handles cue timestamps and word timestamps. It ignores styling, regions and voice spans.
 - Polly speech marks are trusted as given. How well they match the audio depends on the voice and language;
