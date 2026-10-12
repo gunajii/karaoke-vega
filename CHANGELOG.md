@@ -2,7 +2,7 @@
 
 ## 0.1.1 (2026-10-12)
 
-- Installable from GitHub: `npm install github:gunajii/karaoke-vega#v0.1.1` (a `prepare` script builds `dist/`).
+- Installable from GitHub: `npm install github:gunajii/karaoke-vega` (a `prepare` script builds `dist/`).
   The README's `npm install @wordlight/karaoke-vega` did not work: the package was never published to npm.
 - The build compiles from a clean checkout (`lib: ES2022` for `Array.prototype.at`).
 

@@ -22,7 +22,7 @@ None of these come with the media player. This package provides all three, with 
 
 ## Installation
 ```
-npm install github:gunajii/karaoke-vega#v0.1.1
+npm install github:gunajii/karaoke-vega
 ```
 The package is not on the npm registry: npm installs it from GitHub and compiles it on install (its `prepare`
 script runs `tsc`). Checked from an empty project on 2026-10-12, including the example under *Basic usage*.
